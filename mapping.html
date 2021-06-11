@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Isotope Calculation Gadgets'>
+  <meta property='og:url' content='https://nobuyukiokahashi.github.io/github.io-Isotope_calc_gadgets_tutorial/'>
+  <meta property='og:description' content='Isotope Calculation Gadgets'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Isotope Calculation Gadgets" />
+  <title>Isotope Calculation Gadgets</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”https://nobuyukiokahashi.github.io/github.io-Isotope_calc_gadgets_tutorial/” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="inner">
+        <h1 class="header-logo">
+          <a href=".">Isotope Calculation Gadgets</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+	    <li class="header-nav-item"><a href="index.html#About">About</a></li>
+	    <li class="header-nav-item"><a href="index.html#Overview">Overview</a></li>
+	    <li class="header-nav-item"><a href="index.html#Imprementation">Imprementation</a></li>
+            <li class="header-nav-item"><a href="index.html#Gadgets">How to use</a></li>
+            <li class="header-nav-item"><a href="index.html#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-inner">
+          <h2 class="article-title">Data mapping</h2>
+          <div class="profile">
+            <p class="profile-body">
+              <img src="img/Overview_after.png">
+            </p>
+          </div>
+          <div class="article-body">
+            <p>
+              Processed data by "Isotope Calculation Gadgets" can be visualized on blank maps by using "Shimadzu Multi-Omics Analysis Gadget Pack" and "VANTED".
+            </p>
+            <h3 class="article-info-title">Preparation</h3>
+            <p>
+              Obtain natural isotope-subtracted labeling data by using <a href="./Natural_Isotope_Subtractor.html">"Natural Isotope Subtractor".</a>
+            </p>
+            <h3 class="article-info-title">Procedure</h3>
+            <p>
+              Click data to visualize, then click "Discover" Button. Select "Shimadzu MSdata import."
+            </p>
+            <img src="img/mapping_start.png">
+            <p>
+              <div class ="note">
+               <h4>Note:</h4>
+               <li>
+                 If you can't find "Shimadzu MSdata import", download and install it following <a href="index.html #Imprementation">instruction</a> (Step 4 in imprementation).
+               </li>  
+              </div>
+            </p>
+            <p>
+              Click "Fluxome" button in the pop-up window.
+            </p>
+            <p>
+              Click "Flux Data Expression Data" button in the next window.
+            </p>
+            <p>
+              The data will be imported in "Shimadzu MSdata import".
+            </p>
+            <p>
+              Fill names of sample groups in the sample ID row. Check "Sample ID" in the Group box. Click Discover and select "Multiomics Data Mapper".
+            </p>
+            <img src="img/data_setting.png">
+            <p>
+              "Multiomics Data Mapper" will start up.
+            </p>
+            <p>
+              Click "Pathway GML File" and choose a blank map. Then, click the "Launch" button.
+              <div class ="note">
+                <h4>Note</h4>
+                <li>
+                  Ready-made blank maps can be obtained from here.
+                </li>
+              </div>
+            </p>
+            <img src="img/data_mapper.png">
+            <p>
+              Click the "Disocver" button and select "VANTED". 
+            </p>
+            <img src="img/vanted_transfer.png">
+            <p>
+              A map with the data visualized will be displayed.
+            
+            <div class ="note">
+              <h4>Note</h4>
+              <li>
+                The map can be modified as you like. Learn more.
+              </li>
+            </div>
+            </p>
+            <img src="img/vanted_map.png">
+
+            <p>
+              Saved the map as image. 
+              Click "File" > "Export" > "Network as Image", then choose an extension.
+            </p>
+
+              
+
+
+
+          </div>
+          <div class="home-link">
+            <p>Return to <a href="./index.html#Gadgets">How to use</a></p>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Nobuyuki Okahashi</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
