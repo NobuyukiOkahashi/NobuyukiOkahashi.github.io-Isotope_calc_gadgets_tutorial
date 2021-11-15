@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Isotope Calculation Gadgets'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='Isotope Calculation Gadgets'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Isotope Calculation Gadgets" />
+  <title>Isotope Calculation Gadgets</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="inner">
+        <h1 class="header-logo">
+          <a href=".">Isotope Calculation Gadgets</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+	        <li class="header-nav-item"><a href="index.html#About">About</a></li>
+	        <li class="header-nav-item"><a href="index.html#Overview">Overview</a></li>
+	        <li class="header-nav-item"><a href="index.html#Imprementation">Imprementation</a></li>
+          <li class="header-nav-item"><a href="index.html#Gadgets">How to use</a></li>
+          <li class="header-nav-item"><a href="index.html#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-inner">
+          <h2 class="article-title">Isotope Channel Generator</h2>
+          <p class="article-img">
+            <img src="img/Isotope_channel_generator.png">
+          </p>
+          <div class="article-body">
+            <p>
+              In isotope labeling analysis using mass spectrometry, it is necessary to create an additional channels to measure isotope-labeled metabolites as well as unlabeled ones. The “Isotope Channel Generator” automatically generates a list of m/z to be measured and a data entry template for natural isotope subtraction by inputting the molecular formula of the target metabolites.
+            </p>
+            <h3 class="article-info-title">Preparation</h3>
+	            <p>
+                Obtain an chemical formula file for "Isotope Channel Generator" from <a href="https://github.com/NobuyukiOkahashi/Isotope_gadgets">here.</a>
+                <h4>Note:</h4>
+                <li>
+                  Chemical formula file used to create the channels is different in SIM and MRM modes. Please select the appropriate one. In the following section, an example of SIM mode will be described.
+                </li>
+              </p>
+
+              <p>
+                Enter the molecular formula of the target metabolites to be measured in the input file.
+                <p>
+                  <img src="img/input_file.png">
+                </p>
+                <div class ="note">
+                <h4>Note:</h4>
+                <li>
+                  Don’t change the header in the input file.
+                </li>
+                <li>
+                  Enter molecular formulas of ion-form metabolites measured by mass spectrometry.
+                </li>
+                <li>
+                   Example: × Alanine C3H7NO2,　✓ Alanine[M-H] C3H6NO2
+                </li>
+                <li>
+                  In the case of GCMS, fill in the molecular formula of metabolites derivatized in your condition and fragmented by electron ionization.
+                </li>
+                  <img src="img/deriv.png">
+                <li>
+                  For more information on molecular cleavage patterns, please refer to following references.
+                </li>
+                <p>
+                  <a href="https://pubs.acs.org/doi/10.1021/ac0708893">Antoniewicz et al., Accurate assessment of amino acid mass isotopomer distributions for metabolic flux analysis. Anal. Chem. 79, 7554–7559 (2007).</a>
+                </p>
+                <p>
+                  <a href="https://link.springer.com/article/10.1007/s00216-016-9724-4">Okahashi et al., GC-MS/MS survey of collision-induced dissociation of <I>tert</I>-butyldimethylsilyl-derivatized amino acids and its application to <sup>13</sup>C-metabolic flux analysis of <I>Escherichia coli</I> central metabolism. Anal. Bioanal. Chem. 408, 6133–6140 (2016).</a>
+                </p>
+                <p>
+                  <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.5b03887">McCloskey et al., MID Max: LC-MS/MS Method for Measuring the Precursor and Product Mass Isotopomer Distributions of Metabolic Intermediates and Cofactors for Metabolic Flux Analysis Applications. Anal. Chem. 88, 1362–1370 (2016).</a>
+                </p>
+                <p>
+                  <a href="https://www.jstage.jst.go.jp/article/massspectrometry/8/1/8_A0073/_article/-char/ja">Okahashi et al., Fragmentation of Dicarboxylic and Tricarboxylic Acids in the Krebs Cycle Using GC-EI-MS and GC-EI-MS/MS. Mass Spectrom. 8, A0073 (2019).</a>
+                </p>
+              </div>
+              </p>
+              
+
+
+
+                
+              
+            <h3 class="article-info-title">Procedures</h3>
+              <p>
+                Start Garuda and open the "Isotope Channel Generator".
+                <div class ="note">
+                  <h4>Note:</h4>
+                  <li>
+                    If you see "Another instance of the Core is already running", click the icon in the lower right corner.
+                  </li> 
+                  <p class="article-img2">
+                  <img src="img/garuda_core.png">
+                </p>
+                </div>
+              </p>
+              <p>
+                Select the file you created, and launch it.
+              </p>
+              <img src="img/start_screen.png">
+              <p>
+                Select the mode in which you want to create channels (ex. "SIM").
+              </p>
+              <p>
+                Select a type of labeled atom and a number of additional channels to be created.
+              </p>
+              <p class="article-img3">
+              <img src="img/additional_choise.png">
+              <div class ="note">
+                <h4>Note:</h4>
+                  <li>
+                    If naturally occurring isotopes are included in the isotopomers that are all labeled by a tracer atom, even heavier isotopomers may be generated.
+                    Therefore, additional channels are essential for accurate correction of natural isotope effects. 
+                    3-4 additional channels are required for GCMS analysis via silyl derivatization because there are relatively abundant natural isotopes in Si atom.
+                    For non-derivaized LCMS analysis, required numbers of additional channels can be determined based on a theoretical isotope ratio. 
+                  </li>
+                </div>
+              </p>
+              <p>
+                Three files are generated and it can be saved by double click.
+              </p>
+                <img src="img/output_screen.png">
+              <p>
+                <div class ="note">
+                  <h4>Note:</h4>
+                  <li>
+                    The Template.csv file is used to input data into the “Natural Isotope Subtractor”, which will be used next to remove the effects of natural isotopes.
+                  </li>
+                  <li>
+                    Channel.csv is used to generate a method for selected ion monitoring in your mass spectrometer. It can also be used to create extract ion chromatograms from scan data.
+                  </li>
+                  <li>
+                    Theoretical labeling.csv provides the theoretical labeling ratio of metabolites in their natural state. This data can be used to validate your analytical method and data by checking whether the analysis results of chemical standards or non-labeled cell extracts match the theoretical labeling ratios.
+                  </li>
+                </div>
+              </p>
+
+            </div>
+           
+
+          </div>
+	        <div class="home-link">
+	          <p>Go to <a href="./Natural_Isotope_Subtractor.html">Natural Isotope Subtractor</a></p>
+	        </div>
+          <div class="home-link">
+            <p>Return to <a href="./index.html#Gadgets">How to use</a></p>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Nobuyuki Okahashi</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
